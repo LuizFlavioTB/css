@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prioridade de substituicao</title>
+  <style>
+    /*
+    ordem de prioridade
+    tag
+    class
+    id
+    */
+    .class1 {
+      color: red;
+    }  
+    .class2 {
+      background-color: blue;
+      color: white;
+    }
+
+    #header {
+      color: blue;
+    }
+    .header {
+      color: red;
+    }
+    header {
+      color: green;
+    }
+    #header div {
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <header class="header" id="header">
+      <div>Prioridade de substituição</div>
+  </header>
+  <main>
+    <section>
+      <h1>Conteúdo</h1>
+      <h3 class="class2">Existem 3 seletores HTML principais:</h3>
+      <p class="class1">TAG: header, section, footer //apenas o nome</p>
+      <p class="class1">ID: nome do ID definido, randon word //usando '#' para chamar o ID</p>
+      <p class="class1">Class: pode ser genérica e aplicada //.Class usando '.' para chamar</p>
+    </section>
+    <section>
+      <p class="class2"> ORDEM DA PRIORIDADE <BR>3.TAG<br>2.Class<br>1.ID</p>
+    </section>
+    <br><br><br>
+    <section>
+      <h1>Teste de priorização</h1>
+      <h3 class="class2">Qual é priorizado? classe, tag ou id?</h3>
+      <p class="class1"> Será editado o style para alterar o título "Prioridade de substituicao"<br>para ver qual dos 3 é priorizado quando aplica 3 cores diferentes<br>chamando a TAG, Class e ID.</r></p>
+    </section>
+  </main>
+  <footer id="footer">
+    <div>
+      <p class="class4">&copy; Todos os direitos reservados</p>
+    </div>
+  </footer>   
+</body>
+</html>
