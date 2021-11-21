@@ -9,9 +9,6 @@
     header{
       background: red;
     }
-    h2{
-      background: blue;
-    }
     #footer{
       background: green;
     }
@@ -24,26 +21,34 @@
     .class3 {
       background: rgb(105, 105, 1);
     }
-    
+    .class4 {
+      background-color: blue;
+      color: white;
+    }
+    #footer div .class4 {
+      color: #ffffff;
+    }
   </style>
 </head>
 <body>
   <header>
     <div>
-      <div><a href="">Seletores</a></div>
+      <div><a href="">Relacionamento de seletores</a></div>
     </div>
   </header>
   <main>
     <section>
       <h1>Conteúdo</h1>
-      <h2>Existem 3 seletores HTML principais:</h2>
+      <h2 class="class4">Existem 3 seletores HTML principais:</h2>
       <p class="class1">TAG: header, section, footer //apenas o nome</p>
       <p class="class2">ID: nome do ID definido, randon word //usando '#' para chamar o ID</p>
       <p class="class3">Class: pode ser genérica e aplicada //.Class usando '.' para chamar</p>
     </section>
   </main>
-  <footer>
-    <p>&copy; Todos os direitos reservados</p>
+  <footer id="footer">
+    <div>
+      <p class="class4">&copy; Todos os direitos reservados</p>
+    </div>
   </footer>   
 </body>
 </html>
