@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo seletores</title>
+  <style>
+   a {
+     color: red;
+   }
+   a:hover {
+     color: green;
+   }
+   a:active {
+     color: blue;
+   }
+   input:focus {
+     color: orange;
+   }
+   div:focus-within {
+     background: gray;
+   }
+  </style>
+</head>
+<body>
+  <header class="header" id="header">
+    <div>
+      <div><a>Pseudo seletores</a></div>
+      <input type="text">
+    </div>
+  </header>
+  <main>
+    <section>
+      <h1>Conteúdo</h1>
+      <h3 class="class2">Existem 3 seletores HTML principais:</h3>
+      <p class="class1">TAG: header, section, footer //apenas o nome</p>
+      <p class="class1">ID: nome do ID definido, randon word //usando '#' para chamar o ID</p>
+      <p class="class1">Class: pode ser genérica e aplicada //.Class usando '.' para chamar</p>
+    </section>
+  </main>
+  <footer id="footer">
+    <div>
+      <p class="class4">&copy; Todos os direitos reservados</p>
+    </div>
+  </footer>   
+</body>
+</html>
